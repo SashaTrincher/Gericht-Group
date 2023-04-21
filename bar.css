@@ -13,6 +13,86 @@ body {
 p {
     color: white;
 }
+.M_header {
+    display: flex;
+    background-image: url(./img/M_cocktail_section_bg.png);
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 25px;
+}
+main {
+    max-width: 1920px;
+}
+.M_header-title {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 40px;
+    font-style: normal;
+    margin-left: 20px;
+}
+.M_header-span {
+    color: rgb(66, 66, 66);
+    transition: 0.5s;
+}
+.M_header-title:hover {
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+.M_header-title:hover .M_header-span {
+    color: #fff;
+    cursor: pointer;
+}
+.M_header__nav {
+    
+}
+.M_header__list {
+    display: flex;
+    justify-content: space-around;
+    width: 430px;
+    max-width: 430px;
+    margin-top: 15px;
+}
+.M_header__list-link {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-style: normal;
+    transition: 0.5s;
+}
+.M_header__list-link:hover {
+    color: #d1d1d1;
+    border-bottom: 1px solid #f8f7e5;
+    cursor: pointer;
+}
+.M_log-in__section {
+    color: #fff;
+    display: flex;
+    
+    margin-top: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+.M_log-in-text {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9b9b9b;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.4s;
+    height: 29px;
+} 
+.M_log-in-text:hover {
+    color: #000;
+    background-color: #c5e8ff;
+}
+hr {
+    height: 57px;
+    border: 1px solid ;
+    margin-top: -16px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .header {
     margin-bottom: 100px;
     height: 121px;
@@ -254,6 +334,68 @@ p {
     opacity: 0.8;
     right: 391px;
     top: 1960px;
+}
+@media (max-width: 320px) { 
+    img { 
+         
+    } 
+    .M_header { 
+        display: block; 
+    } 
+    .M_header__nav { 
+    } 
+    .M_header-title { 
+        display: flex; 
+        margin: auto; 
+        font-size: 35px; 
+    } 
+    .M_header-span { 
+        display: flex; 
+         
+    } 
+    .M_header__list { 
+        display: flex; 
+         
+        justify-content: space-around; 
+        max-width: 260px; 
+        margin-bottom: 20px; 
+    } 
+    .M_header__list-link { 
+        font-size: 12px; 
+        border: 0; 
+    } 
+    .M_header__list-link:hover { 
+        border: 0; 
+    } 
+    .M_log-in__section { 
+        display: flex; 
+        justify-content: center; 
+         
+        margin: 0; 
+    } 
+    hr { 
+         
+         
+    } 
+    .M_log-in-text { 
+        font-size: 12px; 
+        width: 160px; 
+        padding: 0; 
+        padding-top: 10px; 
+        padding-left: 24px; 
+    } 
+    .M_book { 
+        font-size: 12px; 
+        width: 150px; 
+        padding: 0; 
+        padding-top: 10px; 
+        padding-left: 12px; 
+    }
+@media (max-width: 1800px) {
+    .B_awards_letter {
+        display: none;
+    }
+}
 }
 @media (max-width: 768px) {
 .B_awards_image {
